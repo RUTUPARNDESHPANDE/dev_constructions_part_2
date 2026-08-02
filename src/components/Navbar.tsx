@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 // Use image from public folder to avoid missing-module type error
 const logo = '/new_logo-removebg-preview.png';
-import './Navbar.css' assert { type: 'css' };
+// Importing CSS side-effect. If your TS config doesn't include module declarations for CSS,
+// suppress the type error for this side-effect import.
+// @ts-ignore
+import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
