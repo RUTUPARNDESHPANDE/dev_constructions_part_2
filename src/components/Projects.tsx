@@ -45,7 +45,6 @@ const Projects = () => {
           ))}
         </div>
         
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href="#" className="btn btn-outline" style={{ marginTop: '3rem', color: 'var(--text-main)', borderColor: 'var(--text-main)' }}>View All Projects</a>
       </div>
     </section>

@@ -1,7 +1,4 @@
-// If TypeScript can't find the image module declarations, require it and ignore TS checks
-// to avoid adding global .d.ts files. This keeps the import working at runtime.
-// @ts-ignore
-const logo = require('../assets/new_logo-removebg-preview.png');
+import logo from '../assets/new_logo-removebg-preview.png';
 
 const Footer = () => {
   return (
