@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import logo from '../../new_logo-removebg-preview.png';
-import './Navbar.css';
+// Use image from public folder to avoid missing-module type error
+const logo = '/new_logo-removebg-preview.png';
+import './Navbar.css' assert { type: 'css' };
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
