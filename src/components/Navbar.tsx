@@ -51,9 +51,10 @@ const Navbar = () => {
           <span className="logo-text">DEV</span> CONSTRUCTIONS
         </a>
         
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <i className={`fas ${menuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
-        </div>
+          <span className="hamburger-text">Menu</span>
+        </button>
 
         <nav className={`nav-menu-floating ${menuOpen ? 'active' : ''}`}>
           <ul>
